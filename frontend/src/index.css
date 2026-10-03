@@ -1,0 +1,136 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 20px;
+  max-width: 600px;
+  background: #fafafa;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+section {
+  margin-top: 24px;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+button:hover:not(:disabled) {
+  background: #000;
+}
+
+button:disabled {
+  background: #aaa;
+  border-color: #aaa;
+  cursor: not-allowed;
+}
+
+.panel-pair {
+  display: flex;
+  gap: 24px;
+}
+
+.panel {
+  flex: 1;
+}
+
+.panel--chat h2 {
+  color: blue;
+}
+
+.panel--chien h2 {
+  color: orangered;
+}
+
+.panel-feedback {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.roster-pair {
+  display: flex;
+  gap: 24px;
+}
+
+.roster-pair > div {
+  flex: 1;
+}
+
+.roster-list {
+  list-style: none;
+  padding: 0;
+}
+
+.roster-list li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.roster-list .stats {
+  color: #777;
+  margin-left: 6px;
+}
+
+.empty-state {
+  color: #777;
+  font-style: italic;
+}
+
+.course-picker {
+  margin-top: 12px;
+}
+
+.couloir {
+  margin: 4px 0;
+}
+
+.couloir--chat {
+  color: blue;
+}
+
+.couloir--chien {
+  color: orangered;
+}
+
+.classement-list li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.classement-espece,
+.classement-victoires {
+  color: #777;
+  margin-left: 6px;
+}
+
+.feedback--erreur,
+.panel-feedback[data-state="erreur"] {
+  color: red;
+}
